@@ -25,10 +25,10 @@ public class Spy implements MailService {
         }
         if (mail instanceof MailMessage currentMail) {
             if (currentMail.getFrom().equals("Austin Powers")) {
-                logger.log(Level.WARNING, "Detected target mail correspondence: from " + currentMail.getFrom() +
+                logger.warning("Detected target mail correspondence: from " + currentMail.getFrom() +
                         " to " + currentMail.getTo() + " " + currentMail.getMessage());
             } else {
-                logger.log(Level.INFO, "Usual correspondence: from " + currentMail.getFrom() +
+                logger.info("Usual correspondence: from " + currentMail.getFrom() +
                         " to " + currentMail.getTo());
             }
         }
