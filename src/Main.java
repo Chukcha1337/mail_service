@@ -20,11 +20,10 @@ public class Main {
         sendables.add(message5);
         sendables.add(message6);
 
-        MailService[] mailServices = new MailService[4];
-        mailServices[0] = new RealMailService();
-        mailServices[1] = new Spy();
-        mailServices[2] = new Thief(200);
-        mailServices[3] = new Inspector();
+        MailService[] mailServices = new MailService[3];
+        mailServices[0] = new Spy();
+        mailServices[1] = new Thief(200);
+        mailServices[2] = new Inspector();
 
 
         MailService brodyaga = new UntrustworthyMailWorker(mailServices);
