@@ -5,5 +5,4 @@ public class RealMailService implements MailService {
         // Здесь описан код настоящей системы отправки почты.
         return mail;
     }
-    NullPointerException
 }
